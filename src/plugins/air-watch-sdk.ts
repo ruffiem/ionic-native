@@ -47,7 +47,7 @@ export class AirWatchSDK {
    * @return {Promise<string>} Returns a promise
    */
   @Cordova()
-  static username(): Promise<string> { return; }
+  static username(success: Function, error: Function): Promise<string> { return; }
 
   /**
    * This function returns the enrolled user's group ID
@@ -82,8 +82,9 @@ export class AirWatchSDK {
    * @return {Promise<string>} Returns a promise
    */
   @Cordova({
+    sync: true,
     callbackOrder: 'reverse'
   })
-  static customSettings(success, error): Promise<string> { return; }
+  static customSettings(success: Function, error: Function): Promise<string> { return; }
 
 }
