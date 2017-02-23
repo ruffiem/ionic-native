@@ -81,7 +81,9 @@ export class AirWatchSDK {
    * This function returns any custom settings provided in the app's profile
    * @return {Promise<string>} Returns a promise
    */
-  @Cordova()
-  static customSettings(): Promise<string> { return; }
+  @Cordova({
+    callbackOrder: 'reverse'
+  })
+  static customSettings(success, error): Promise<string> { return; }
 
 }
