@@ -6,10 +6,11 @@ declare var window;
 
 import { ActionSheet } from './plugins/actionsheet';
 import { AdMob } from './plugins/admob';
+import { AirWatchSDK } from './plugins/air-watch-sdk';
 import { AndroidFingerprintAuth } from './plugins/android-fingerprint-auth';
 import { AppAvailability } from './plugins/appavailability';
-import { AppRate } from './plugins/apprate';
 import { AppPreferences } from './plugins/apppreferences';
+import { AppRate } from './plugins/apprate';
 import { AppVersion } from './plugins/appversion';
 import { Badge } from './plugins/badge';
 import { BackgroundGeolocation } from './plugins/background-geolocation';
@@ -129,6 +130,7 @@ import { Zip } from './plugins/zip';
 export * from './plugins/3dtouch';
 export * from './plugins/actionsheet';
 export * from './plugins/admob';
+import * from './plugins/air-watch-sdk';
 export * from './plugins/android-fingerprint-auth';
 export * from './plugins/appavailability';
 export * from './plugins/apppreferences';
@@ -254,6 +256,7 @@ export * from './plugins/zip';
 window['IonicNative'] = {
   ActionSheet,
   AdMob,
+  AirWatchSDK,
   AndroidFingerprintAuth,
   AppAvailability,
   AppPreferences,
