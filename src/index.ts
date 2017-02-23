@@ -130,7 +130,7 @@ import { Zip } from './plugins/zip';
 export * from './plugins/3dtouch';
 export * from './plugins/actionsheet';
 export * from './plugins/admob';
-import * from './plugins/air-watch-sdk';
+export * from './plugins/air-watch-sdk';
 export * from './plugins/android-fingerprint-auth';
 export * from './plugins/appavailability';
 export * from './plugins/apppreferences';
