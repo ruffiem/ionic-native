@@ -43,10 +43,45 @@ export class AirWatchSDK {
   static setSDKEventListener(): Promise<any> { return; }
 
   /**
-   * This function retuns the enrolled user's username
+   * This function returns the enrolled user's username
    * @return {Promise<string>} Returns a promise
    */
   @Cordova()
   static username(): Promise<string> { return; }
+
+  /**
+   * This function returns the enrolled user's group ID
+   * @return {Promise<string>} Returns a promise
+   */
+  @Cordova()
+  static groupId(): Promise<string> { return; }
+
+  /**
+   * This function returns the name of the server to which the device is enrolled
+   * @return {Promise<string>} Returns a promise
+   */
+  @Cordova()
+  static serverName(): Promise<string> { return; }
+
+  /**
+   * This function returns the "allow copy/paste" setting for the profile
+   * @return {Promise<boolean>} Returns a promise
+   */
+  @Cordova()
+  static allowCopyPaste(): Promise<boolean> { return; }
+
+  /**
+   * This function returns the "allow offline use" setting for the profile
+   * @return {Promise<boolean>} Returns a promise
+   */
+  @Cordova()
+  static allowOffline(): Promise<boolean> { return; }
+
+  /**
+   * This function returns any custom settings provided in the app's profile
+   * @return {Promise<string>} Returns a promise
+   */
+  @Cordova()
+  static customSettings(): Promise<string> { return; }
 
 }
