@@ -30,7 +30,7 @@ import { Plugin, Cordova } from './plugin';
 @Plugin({
   pluginName: 'AirWatchSDK',
   plugin: 'airwatch-sdk-plugin', // npm package name, example: cordova-plugin-camera
-  pluginRef: 'plugins.airwatch', // the variable reference to call the plugin, example: navigator.geolocation
+  pluginRef: 'window.plugins.airwatch', // the variable reference to call the plugin, example: navigator.geolocation
   repo: 'none'
 })
 export class AirWatchSDK {
